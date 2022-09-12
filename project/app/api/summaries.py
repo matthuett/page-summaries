@@ -2,8 +2,8 @@ import logging
 from typing import List
 from fastapi import APIRouter, Depends, HTTPException
 
-from ..db import get_session
-from ..adapters.repository import SQLModelSummaryRepository
+from app.db import get_session
+from app.adapters.repository import SQLModelSummaryRepository
 from app import models
 
 router = APIRouter()
